@@ -3,6 +3,8 @@ from models import SupportTicket, SupportResponse
 from classifier import classify_message,detect_priority
 from chat import generate_response
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 app = FastAPI()
 
@@ -12,6 +14,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.get("/")
+async def serve_ui():
+    return FileResponse("chatbox.html")
 
 @app.post("/support", response_model=SupportResponse)
 async def handle_support(ticket:SupportTicket):

@@ -13,5 +13,5 @@ messages and generates responses automatically.
 Python, FastAPI, Groq API, Pydantic
 
 ## Run locally
-pip install -r requirements.txt
-uvicorn main:app --reload
+- pip install -r requirements.txt
+- uvicorn main:app --reload

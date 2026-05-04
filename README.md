@@ -26,10 +26,10 @@ messages, searches a knowledge base, and generates responses.
 - `GET  /docs` → API Documentation
 
 ## Run Locally
-git clone https://github.com/RahilMirchiwala/Customer-Support-AI
-cd Customer-Support-AI
-pip install -r requirements.txt
-uvicorn main:app --reload
+- git clone https://github.com/RahilMirchiwala/Customer-Support-AI
+- cd Customer-Support-AI
+- pip install -r requirements.txt
+- uvicorn main:app --reload
 
 ## Environment Variables
 GROQ_API_KEY=your_key_here

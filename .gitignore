@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+temp_customer_support_faq.pdf  ← temporary file hai
+test_retriever.py              ← test file hai
+__pycache__/      

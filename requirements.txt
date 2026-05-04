@@ -4,3 +4,10 @@ groq
 pydantic
 python-dotenv
 aiofiles
+langchain
+langchain-community
+langchain-huggingface
+langchain-text-splitters
+chromadb
+sentence-transformers
+pypdf
